@@ -28,7 +28,6 @@ H2 {
     font-family: Verdana;
     font-size: 25px;
     width: 350px;
-    height: 1px;
     display: inline-block;
     } 
 
@@ -133,47 +132,67 @@ function checkforblank() {
 <div name="Registration Form"> 
 <h1><font color="Blue"; face="Tahoma"; font-size="40px">REGISTRATION FORM</font></h1>
 </div>    
+   
+<table>
+    <form name='myform' method="post" action="F:\TestRepo\Calculator\galvanMainPage.html">
     
-<br>    
+    <tr>   
+        <td><H2><label>FIRST NAME:</label></H2></td>
+        <td><input type='text' id='fname' name='name' size="25" style="font-size: 16pt;" required></td>
+    </tr>  
     
-<form name='myform' method="post" action="F:\TestRepo\Calculator\frame.html">
-
-<H2><label>FIRST NAME:</label></H2>
-<span><input type='text' id='fname' name='name' size="25" style="font-size: 16pt;" required></span><br>
+    <tr>
+        <td><H2><label>MIDDLE NAME:</label></H2></td>
+        <td><input type='text' id='mname' name='mname' size="25" style="font-size: 16pt;" required></td>
+    </tr>
     
-<H2><label>MIDDLE NAME:</label></H2>
-<span><input type='text' id='mname' name='mname' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>LAST NAME:</label></H2>
-<span><input type='text' id='lname' name='lname' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>SUFFIX:</label></H2>
-<span><input type='text' id='suff' name='suff' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>COUNTRY:</label></H2>
-<span><input type='text' id='count' name='count' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>PROVINCE:</label></H2>
-<span><input type='text' id='prov' name='prov' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>MUNICIPALITY:</label></H2>
-<span><input type='text' id='muni' name='muni' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>BARANGAY:</label></H2>
-<span><input type='text' id='brgy' name='brgy' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>SUBD./HOUSE#/ST.:</label></H2>
-<span><input type='text' id='shs' name='ssub' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>BIRTHDAY:</label></H2>
-<span><input type='text' id='bday' name='bday' size="25" style="font-size: 16pt;" required></span><br>
-
-<H2><label>AGE:</label></H2>
-<span><input type='text' id='age' name='age' size="25" style="font-size: 16pt;" required></span><br>
+    <tr>
+        <td><H2><label>LAST NAME:</label></H2></td>
+        <td><input type='text' id='lname' name='lname' size="25" style="font-size: 16pt;" required></td>
+    </tr>
     
-<br>
-<br>
-
+    <tr>
+        <td><H2><label>SUFFIX:</label></H2></td>
+        <td><input type='text' id='suff' name='suff' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>COUNTRY:</label></H2></td>
+        <td><input type='text' id='count' name='count' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>PROVINCE:</label></H2></td>
+        <td><input type='text' id='prov' name='prov' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>MUNICIPALITY:</label></H2></td>
+        <td><input type='text' id='muni' name='muni' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>BARANGAY:</label></H2></td>
+        <td><input type='text' id='brgy' name='brgy' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>SUBD./HOUSE#/ST.:</label></H2></td>
+        <td><input type='text' id='shs' name='ssub' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>BIRTHDAY:</label></H2></td>
+        <td><input type='text' id='bday' name='bday' size="25" style="font-size: 16pt;" required></td>
+    </tr>
+    
+    <tr>
+        <td><H2><label>AGE:</label></H2></td>
+        <td><input type='text' id='age' name='age' size="25" style="font-size: 16pt;" required></td>
+    </tr>    
+    
+    </table>
+    
 <BUTTON Class="b1" TYPE="SUBMIT" onclick="checkforblank(), check(); return false"  >VIEW</BUTTON>
  
 
@@ -217,7 +236,9 @@ function checkforblank() {
 </div> 
 
 <input id="submit" TYPE="SUBMIT" value="SUBMIT">
-</form>           
+
+</form>     
+      
 </body>  
 </head>    
 </html>
