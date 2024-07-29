@@ -19,58 +19,58 @@ document.getElementById('f11').innerHTML = document.myform.age.value;
 
 function checkforblank() {
 
-    if (document.getElementById('fname').value == "") {
+    if (document.getElementById('kirkfname').value == "") {
         alert('Please enter your FIRST NAME');
 
         return false;   
     }
 
-    if (document.getElementById('mname').value == "") {
+    if (document.getElementById('kirkmname').value == "") {
         alert('Please enter your MIDDLE NAME');
         return false;
     }
 
-    if (document.getElementById('lname').value == "") {
+    if (document.getElementById('kirklname').value == "") {
         alert('Please enter your LAST NAME');
         return false;
     }
 
-    if (document.getElementById('suff').value == "") {
+    if (document.getElementById('kirksuff').value == "") {
         alert('Please enter your SUFFIX');
         return false;
     }
 
-    if (document.getElementById('count').value == "") {
+    if (document.getElementById('kirkcount').value == "") {
         alert('Please enter your COUNTRY');
         return false;
     }
 
-    if (document.getElementById('prov').value == "") {
+    if (document.getElementById('kirkprov').value == "") {
         alert('Please enter your PROVINCE');
         return false;
     }
 
-    if (document.getElementById('muni').value == "") {
+    if (document.getElementById('kirkmuni').value == "") {
         alert('Please enter your MUNICIPALITY');
         return false;
     }
 
-    if (document.getElementById('brgy').value == "") {
+    if (document.getElementById('kirkbrgy').value == "") {
         alert('Please enter your BARANGAY');
         return false;
     }
 
-    if (document.getElementById('shs').value == "") {
+    if (document.getElementById('kirkshs').value == "") {
         alert('Please enter your SUBD./HOUSE#/ST.');
         return false;
     }
 
-    if (document.getElementById('bday').value == "") {
+    if (document.getElementById('kirkbday').value == "") {
         alert('Please enter your BIRTHDAY');
         return false;
     }
 
-    if (document.getElementById('age').value == "") {
+    if (document.getElementById('kirkage').value == "") {
         alert('Please enter your AGE');
         return false;
     }
@@ -80,7 +80,9 @@ function checkforblank() {
 
 
 </script>
-    
+
+<link href="C:\xampp1\htdocs\Calculator\galvanRegStyle.css" rel="stylesheet" type="text/css">
+
 <title>Registration</title>
     
 <body style="background-color: goldenrod"; text-align="left">
@@ -90,66 +92,67 @@ function checkforblank() {
 </div>    
    
 <table>
-    <form name='myform' method="post" action="">
+    <form name='myform' method="post" action="http://localhost/calculator/galvanMainPage.html">
     
     <tr>   
-        <td><H2><label>FIRST NAME:</label></H2></td>
-        <td><input type='text' id='fname' name='name' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>FIRST NAME :</b></font></label></td>
+        <td><input type='text' id='kirkfname' name='name' size="20" style="font-size: 16pt;" required></td>
     </tr>  
-    
     <tr>
-        <td><H2><label>MIDDLE NAME:</label></H2></td>
-        <td><input type='text' id='mname' name='mname' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>MIDDLE NAME :</b></font></label></td>
+        <td><input type='text' id='kirkmname' name='mname' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>LAST NAME:</label></H2></td>
-        <td><input type='text' id='lname' name='lname' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>LAST NAME :</b></font></label></td>
+        <td><input type='text' id='kirklname' name='lname' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>SUFFIX:</label></H2></td>
-        <td><input type='text' id='suff' name='suff' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>SUFFIX :</b></font></label></td>
+        <td><input type='text' id='kirksuff' name='suff' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>COUNTRY:</label></H2></td>
-        <td><input type='text' id='count' name='count' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>COUNTRY :</b></font></label></td>
+        <td><input type='text' id='kirkcount' name='count' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>PROVINCE:</label></H2></td>
-        <td><input type='text' id='prov' name='prov' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>PROVINCE :</b></font></label></td>
+        <td><input type='text' id='kirkprov' name='prov' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>MUNICIPALITY:</label></H2></td>
-        <td><input type='text' id='muni' name='muni' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>MUNICIPALITY :</b></font></label></td>
+        <td><input type='text' id='kirkmuni' name='muni' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>BARANGAY:</label></H2></td>
-        <td><input type='text' id='brgy' name='brgy' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>BARANGAY :</b></font></label></td>
+        <td><input type='text' id='kirkbrgy' name='brgy' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>SUBD./HOUSE#/ST.:</label></H2></td>
-        <td><input type='text' id='shs' name='ssub' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>SUBD./HOUSE#/ST. :</b></font></label></td>
+        <td><input type='text' id='kirkshs' name='ssub' size="20" style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>BIRTHDAY:</label></H2></td>
-        <td><input type='text' id='bday' name='bday' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>BIRTHDAY :</b></font></label></td>
+        <td><input type='date' id='kirkbday' name='bday' style="font-size: 16pt;" required></td>
     </tr>
     
     <tr>
-        <td><H2><label>AGE:</label></H2></td>
-        <td><input type='text' id='age' name='age' size="25" style="font-size: 16pt;" required></td>
+        <td><label for="Fname"><font class="form1"><b>AGE :</b></font></label></td>
+        <td><input type='number' id='kirkage' name='age' style="font-size: 16pt;" required></td>
     </tr>    
     
     </table>
+
+    <br>
     
-<BUTTON Class="b1" TYPE="SUBMIT" onclick="checkforblank(), check(); return false"  >VIEW</BUTTON>
+<BUTTON Class="galvanButton1" TYPE="SUBMIT" onclick="checkforblank(), check(); return false">VIEW</BUTTON>
  
 
 
@@ -191,7 +194,7 @@ function checkforblank() {
 
 </div> 
 
-<input id="submit" TYPE="SUBMIT" value="SUBMIT">
+<BUTTON Class="galvanButton2" TYPE="SUBMIT" onclick="check()">SUBMIT</BUTTON>
 
 </form>     
       

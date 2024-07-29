@@ -1,0 +1,41 @@
+
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    .galvanButton1 {
+       background-color: red;
+       border-color: green;
+       color: white;
+       font-family: Century Gothic;
+       font-size: 20;
+       width: 250px;
+       height: 70px;
+    }
+    .galvanButton2 {
+       background-color: yellowgreen;
+       border-color: green;
+       color: white;
+       font-family: Century Gothic;
+       font-size: 20;
+       width: 250;
+       height: 75;
+    }
+
+    p {
+       color: whitesmoke;
+       font-family: Helvetica;
+       font-size:25;
+    }
+    label {
+       width: 350;
+       display: inline-block;
+    }
+
+    .form1 {
+      color: green;
+      font-family: Verdana;
+      font-size: 25px;
+    }
