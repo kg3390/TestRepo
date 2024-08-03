@@ -1,0 +1,152 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+      
+<script type="text/javascript" src="C:\Users\Admin\Desktop\Registration1\galvanRegistration1.js"></script>
+
+<link href="C:\Users\Admin\Desktop\Registration1\galvanRegistration1.css" rel="stylesheet" type="text/css">
+
+<title>Registration</title>
+    
+<body style="background-color: #ccd1d1"; text-align="MIDDLE">
+
+<center>
+<fieldset>
+<form name='myform' method="post" action="">   
+
+<p><font color="black"; face="Century Gothic";><b>Registration Form</b></font></p>
+
+<div name="Full Name">     
+<table>
+    <tr>   
+        <td><label><font class="form1">Full Name :</font></label></td>
+        <td><input type='text' id='First' name='FnameKG'  style="font-size: 16pt" required><font class="inputTXT"><br>First Name</font></td>
+        <td><input type='text' id='Last' name='LnameKG'  style="font-size: 16pt" required><font class="inputTXT"><br>Last Name</font></td>
+    </tr>
+</table>
+</div>
+
+<div name="Email"> 
+<table>   
+    <tr>   
+        <td><label><font class="form1">E-Mail :</font></label></td>
+        <td><input class="email" type='text' id='Email' name='EmailKG' style="font-size: 16pt" required><font class="inputTXT"><br>example@example.com</font></td>
+    </tr>    
+</table> 
+</div> 
+
+<div name="Phone#"> 
+<table>    
+    <tr>   
+        <td><label><font class="form1">Phone Number :</font></label></td>
+        <td><input type='number' 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" 
+                id='Area' name='AreaKG' style="font-size: 16pt" max="4" required><font class="inputTXT"><br>Area Code</font></td>
+        <td><input type='number' 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" 
+                id='Ptn' name='PtnKG' style="font-size: 16pt" max="10" required><font class="inputTXT"><br>Phone Number</font></td>
+    </tr>      
+</table> 
+</div> 
+
+<div name="Address"> 
+<table name="T1">    
+    <tr>   
+        <td><label><font class="form1">Address :</font></label></td>
+        <td><input class="address" type='text' id='Address' name='AddressKG' style="font-size: 16pt" required><font class="inputTXT"><br>Street Address</font></td>
+    </tr>
+</table>
+<table name="T2">   
+    <tr>   
+        <td><label></label></td>
+        <td><input type='text' id='City' name='CityKG' style="font-size: 16pt" required><font class="inputTXT"><br>City</font></td>
+        <td><input type='text' id='State' name='StateKG' style="font-size: 16pt" required><font class="inputTXT"><br>State/Province</font></td>
+    </tr>
+</table>
+<table name="T3">   
+    <tr>   
+        <td><label></label></td>
+        <td><input type='number' 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="5"  
+                 id='Zip' name='ZipKG' style="font-size: 16pt" required><font class="inputTXT"><br>Postal/Zip Code</font></td>               
+        <td><input type='text' id='Country' name='CountKG' style="font-size: 16pt" required><font class="inputTXT"><br>Country</font></td>
+    </tr>
+</table>
+</div>
+
+<div name="Company"> 
+<table>   
+    <tr>   
+        <td><label><font class="form1">Company Name :</font></label></td>
+        <td><input class="Comp" type='text' id='Comp' name='CompKG' style="font-size: 16pt" required></td>
+    </tr>
+</table> 
+</div>
+
+<br>
+
+<div name="Attendee"> 
+<table id="res">   
+    <tr>   
+        <td><label><font class="form1">Attendee Count :</font></label></td>
+            <td><font class="dollar1"> $500 x </font>
+                <input class="dollar2" type='number' 
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2"     
+                        id='Attendee' name='AcKG' style="font-size: 16pt" required>
+                            <font class="inputTXT"><br>Max 10 Attendee</font></td>
+    </tr>
+</table> 
+</div> 
+
+</form>
+
+<br>
+<BUTTON Class="galvanButton1" TYPE="SUBMIT" onclick="checkforblank(), check(); return false">VIEW</BUTTON>
+
+</fieldset>
+</center>
+
+<br>
+
+<fieldset>
+<center><p><font color="black"; face="Century Gothic"; font-size="25px"><b>Your Information:</b></font></p></center>
+    
+<div name="viewform">
+<p><label class="info1">FIRST NAME:</label>
+<span class="info2" id='f1' style="text-transform: uppercase;"></span></p>
+
+<p><label class="info1">LAST NAME:</label>
+<span class="info2" id='f2' style="text-transform: uppercase;"></span></p>
+
+<p><label class="info1">EMAIL:</label>
+<span class="info2" id='f3' style="text-transform: uppercase;"></span></p>
+
+<p><label class="info1">PHONE NUMBER:</label>
+<span class="info2" id='f4' style="text-transform: uppercase;"></span>
+<span class="info2" id='f5' style="text-transform: uppercase;"></span>
+</p>
+
+<p><label class="info1">ADDRESS:</label>
+<span class="info2" id='f6' style="text-transform: uppercase;"></span>
+<span class="info2" id='f7' style="text-transform: uppercase;"></span>
+<span class="info2" id='f8' style="text-transform: uppercase;"></span>
+<span class="info2" id='f9' style="text-transform: uppercase;"></span>
+<span class="info2" id='f10' style="text-transform: uppercase;"></span>
+</p>
+
+<p><label class="info1">COMPANY NAME:</label>
+<span class="info2" id='f11' style="text-transform: uppercase;"></span></p>
+
+<p><label class="info1">ATTENDEE COUNT:</label>
+<span class="info2" id='f12' style="text-transform: uppercase;"></span></p>
+</div> 
+
+<center><BUTTON Class="galvanButton2" TYPE="SUBMIT" onclick="check()">SUBMIT</BUTTON></center>
+
+</form>     
+</fieldset>
+      
+</body>  
+</head>    
+</html>

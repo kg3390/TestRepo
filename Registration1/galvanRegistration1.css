@@ -1,0 +1,96 @@
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+.galvanButton1 {
+       background-color: #0099ff;
+       border-color: blue;
+       border-radius: 8px;
+       color: white;
+       font-family: Century Gothic;
+       font-size: 20;
+       width: 250px;
+       height: 70px;
+}
+.galvanButton2 {
+       background-color: #5dade2;
+       border-color: blue;
+       border-radius: 8px;
+       color: white;
+       font-family: Century Gothic;
+       font-size: 20;
+       width: 250;
+       height: 75;
+}
+
+p {
+       color: whitesmoke;
+       font-family: Helvetica;
+       font-size:25;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.form1 {
+      color: black;
+      font-family: Century Gothic;
+      font-size: 20px;
+      
+}
+
+input {
+   border-radius: 8px;
+   margin-right: 25px;
+ }
+
+.inputTXT{
+   font-family: verdana;
+   font-style: italic;
+   font-size: 13px;
+   color: grey;
+ }
+
+ .email {
+    width: 578px;
+ }
+
+ .address {
+    width: 578px;
+ }
+
+ .Comp {
+    width: 578px;
+ }
+
+ .dollar1 {
+    font-family: century gothic;
+ }
+
+ .dollar2 {
+    width: 523px;
+    margin-left: 3px
+
+ }
+
+ fieldset {
+    border-radius: 8px;
+ }
+  
+ .info1 {
+    color: black;
+      font-family: Century Gothic;
+      font-size: 20px;
+ }
+
+ .info2 {
+    color: black;
+      font-family: Century Gothic;
+      font-size: 18px;
+ }
