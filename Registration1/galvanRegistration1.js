@@ -1,3 +1,11 @@
+function add(){
+    var x=parseInt(document.getElementById('val1').value);
+    var y=parseInt(document.getElementById('Attendee').value);
+    var res = x * y;
+        console.log(res);
+        document.getElementById('res').innerHTML = res;
+}
+
 function check()
 {
 document.getElementById('f1').innerHTML = document.myform.FnameKG.value; 
@@ -76,4 +84,7 @@ function checkforblank() {
         return false;
     }
 
+
+
+    
 }

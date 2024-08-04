@@ -1,9 +1,10 @@
 <html>
 <head>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
       
 <script type="text/javascript" src="C:\Users\Admin\Desktop\Registration1\galvanRegistration1.js"></script>
+
+</script>
 
 <link href="C:\Users\Admin\Desktop\Registration1\galvanRegistration1.css" rel="stylesheet" type="text/css">
 
@@ -87,13 +88,15 @@
 <br>
 
 <div name="Attendee"> 
-<table id="res">   
+
+<table>   
     <tr>   
         <td><label><font class="form1">Attendee Count :</font></label></td>
             <td><font class="dollar1"> $500 x </font>
+                <input id="val1" type="hidden" value="500">
                 <input class="dollar2" type='number' 
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2"     
-                        id='Attendee' name='AcKG' style="font-size: 16pt" required>
+                        id='Attendee' name='AcKG' style="font-size: 16pt" min=1 max=10>
                             <font class="inputTXT"><br>Max 10 Attendee</font></td>
     </tr>
 </table> 
@@ -102,7 +105,7 @@
 </form>
 
 <br>
-<BUTTON Class="galvanButton1" TYPE="SUBMIT" onclick="checkforblank(), check(); return false">VIEW</BUTTON>
+<BUTTON Class="galvanButton1" TYPE="SUBMIT" onclick="checkforblank(), check(), add(); return false">VIEW</BUTTON>
 
 </fieldset>
 </center>
@@ -139,7 +142,9 @@
 <span class="info2" id='f11' style="text-transform: uppercase;"></span></p>
 
 <p><label class="info1">ATTENDEE COUNT:</label>
-<span class="info2" id='f12' style="text-transform: uppercase;"></span></p>
+<span class="info2" id='f12' style="text-transform: uppercase;"></span>
+<span class="info2" id='res' style="text-transform: uppercase;"></span>
+</p>
 </div> 
 
 <center><BUTTON Class="galvanButton2" TYPE="SUBMIT" onclick="check()">SUBMIT</BUTTON></center>
