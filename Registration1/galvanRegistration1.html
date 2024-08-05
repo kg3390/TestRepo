@@ -94,8 +94,8 @@
                 <input id="val1" type="hidden" value="500">
                 <input class="dollar2" type='number' 
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2"
-                        id='Attendee' name='AcKG' style="font-size: 16pt" min='1' max='10'/>
-                            <font class="inputTXT"><br>Max 10 Attendee</font></td>
+                        id='Attendee' name='AcKG' style="font-size: 16pt" min='1' max='10' onclick="compute()" onkeyup="compute()"/>
+                            <font class="inputMax"><br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Max 10 Attendee</font></td>
 
 <script for ="dollar2">
    document.getElementsByClassName('dollar2')[0].oninput = function () {
@@ -113,7 +113,7 @@
 </form>
 
 <br>
-<BUTTON Class="galvanButton1" TYPE="SUBMIT" onclick="checkforblank(), check(), add(); return false">VIEW</BUTTON>
+<BUTTON Class="galvanButton1" TYPE="SUBMIT" onclick="checkforblank(), check(), compute(); return false">VIEW</BUTTON>
 
 </fieldset>
 </center>
@@ -154,7 +154,7 @@
 </p>
 
 <p id="res"><label class="info1">TOTAL AMOUNT:</label>
-<input class="add" id="add" style="font-size: 15pt;">
+<input class="add" id="compute" style="font-size: 15pt;">
 </p>
 </div> 
 

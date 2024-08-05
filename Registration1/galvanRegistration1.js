@@ -1,17 +1,11 @@
-var numOne, numTwo, res, temp;
-function add()
-{
-  numOne = parseInt(document.getElementById("val1").value);
-  numTwo = parseInt(document.getElementById("Attendee").value);
-  if(numOne && numTwo)
-  {
-    temp = document.getElementById("res");
-    temp.style.display = "block";
-    res = numOne * numTwo;
-    document.getElementById("add").value = '$' +  res;
-  }
+function compute() {
+        var txtFirstNo = document.getElementById('val1').value;
+        var txtSecondNo = document.getElementById('Attendee').value;
+        var result = parseInt(txtFirstNo) * parseInt(txtSecondNo);
+        if (!isNaN(result)) {
+            document.getElementById('compute').value = '$' + result;
+        }
 }
-
 
 function check()
 {
@@ -90,8 +84,4 @@ function checkforblank() {
         alert('Please enter number of Attendees');
         return false;
     }
-
-
-
-    
 }
