@@ -1,10 +1,4 @@
 
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-    }
-
 .galvanButton1 {
        background-color: #0099ff;
        border-color: blue;
@@ -93,5 +87,24 @@ input {
     color: black;
       font-family: Century Gothic;
       font-size: 18px;
+ }
+
+ .TablePhone{
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+       }
+ }
+
+ .TableZip{
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+       }
+ }
+
+ .add {
+   width: 100px;
+   text-align: center;
  }
 

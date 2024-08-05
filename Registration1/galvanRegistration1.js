@@ -1,10 +1,17 @@
-function add(){
-    var x=parseInt(document.getElementById('val1').value);
-    var y=parseInt(document.getElementById('Attendee').value);
-    var res = x * y;
-        console.log(res);
-        document.getElementById('res').innerHTML = res;
+var numOne, numTwo, res, temp;
+function add()
+{
+  numOne = parseInt(document.getElementById("val1").value);
+  numTwo = parseInt(document.getElementById("Attendee").value);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("res");
+    temp.style.display = "block";
+    res = numOne * numTwo;
+    document.getElementById("add").value = '$' +  res;
+  }
 }
+
 
 function check()
 {

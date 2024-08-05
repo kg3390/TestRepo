@@ -4,8 +4,6 @@
       
 <script type="text/javascript" src="C:\Users\Admin\Desktop\Registration1\galvanRegistration1.js"></script>
 
-</script>
-
 <link href="C:\Users\Admin\Desktop\Registration1\galvanRegistration1.css" rel="stylesheet" type="text/css">
 
 <title>Registration</title>
@@ -37,7 +35,7 @@
 </table> 
 </div> 
 
-<div name="Phone#"> 
+<div name="Phone#" Class="TablePhone"> 
 <table>    
     <tr>   
         <td><label><font class="form1">Phone Number :</font></label></td>
@@ -65,7 +63,7 @@
         <td><input type='text' id='State' name='StateKG' style="font-size: 16pt" required><font class="inputTXT"><br>State/Province</font></td>
     </tr>
 </table>
-<table name="T3">   
+<table name="T3" class="TableZip">   
     <tr>   
         <td><label></label></td>
         <td><input type='number' 
@@ -95,9 +93,19 @@
             <td><font class="dollar1"> $500 x </font>
                 <input id="val1" type="hidden" value="500">
                 <input class="dollar2" type='number' 
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2"     
-                        id='Attendee' name='AcKG' style="font-size: 16pt" min=1 max=10>
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2"
+                        id='Attendee' name='AcKG' style="font-size: 16pt" min='1' max='10'/>
                             <font class="inputTXT"><br>Max 10 Attendee</font></td>
+
+<script for ="dollar2">
+   document.getElementsByClassName('dollar2')[0].oninput = function () {
+        var max = parseInt(this.max);
+                if (parseInt(this.value) > max) {
+                        this.value = max; 
+                        }
+                    }
+</script>
+
     </tr>
 </table> 
 </div> 
@@ -143,7 +151,10 @@
 
 <p><label class="info1">ATTENDEE COUNT:</label>
 <span class="info2" id='f12' style="text-transform: uppercase;"></span>
-<span class="info2" id='res' style="text-transform: uppercase;"></span>
+</p>
+
+<p id="res"><label class="info1">TOTAL AMOUNT:</label>
+<input class="add" id="add" style="font-size: 15pt;">
 </p>
 </div> 
 
