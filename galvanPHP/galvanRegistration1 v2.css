@@ -1,0 +1,193 @@
+h1 {
+    color: black;
+    font-family: Century Gothic;
+    font-style: bold;
+}
+
+
+label {
+    display: inline-block;
+    width: 250px;
+    font-family: Century Gothic;
+    font-size: 20px;
+    color: black;
+}
+
+.lowerTXT {
+    display: inline-block;
+    width: 150px;
+    font-family: verdana;
+    font-style: italic;
+    font-size: 13px;
+    color: gray;
+}
+
+input {
+    border-radius: 6px;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+.long {
+    display: inline-block;
+    width: 511px;
+}
+
+
+.dollar {
+    font-family: Century Gothic;
+    font-size: 20px;
+    color: black;
+}
+
+.Max {
+    display: inline-block;
+    width: 150px;
+    margin-left: 65px;
+    font-family: verdana;
+    font-style: italic;
+    font-size: 13px;
+    color: gray;
+}
+
+.value2 {
+    display: inline-block;
+    width: 446px;
+}
+
+.result {
+    width: 100px;
+    text-align: left;
+    background-color: #ccd1d1;
+    border: none;
+    outline: none;
+}
+
+.Table {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+
+.TablePhone{
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+}
+ 
+.TableZip{
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+}
+
+.info1 {
+    color: black;
+    font-family: Century Gothic;
+    font-size: 20px;
+ }
+
+ .info2 {
+    display: inline-block;
+    field-sizing: content;
+    text-align: left;
+    background-color: #ddd;
+    border: none;
+    outline: none;
+    font-family: Century Gothic;
+    
+ }
+
+.Button1 {
+    background-color: #0099ff;
+    border-color: #273746;
+    border-radius: 8px;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+
+}
+
+.Button2 {
+    background-color: #5dade2;
+    border-color: #273746;
+    border-radius: 8px;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+}
+
+.show {
+    background-color: #17a589;
+    border-color: #273746;
+    border-radius: 8px;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+}
+
+.hide {
+    background-color: #138d75;
+    border-color: #273746;
+    border-radius: 8px;
+    color: white;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+}
+
+#popin{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    /*transform: translate(0, 0);*/
+    transition: opacity 800ms;
+    opacity: 1;
+    background: lightgreen;
+  }
+  
+  #popin.closed{
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+
+fieldset {
+    font-family: sans-serif;
+    border: 5px solid #1F497D;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+fieldset legend {
+    background: #1F497D;
+    color: #fff;
+    padding: 5px 10px ;
+    font-size: 32px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px grey;
+    margin-left: 20px;
+}
+
+.ui-widget-header {
+    background: lightgreen;
+    color: blue;
+    font-size: 20px;
+ }
+ #dialog {
+    text-align: center;
+ }
