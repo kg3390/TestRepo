@@ -1,0 +1,257 @@
+h1 {
+color: blue; 
+font-family: Tahoma;
+text-align: left;
+font-size: 40px;
+} 
+
+h2 {
+color: green;
+font-family: Verdana;
+text-align: left;
+font-size: 25px;
+}
+
+p {
+color: whitesmoke;
+font-family: Helvetica;
+text-align: left;
+font-size: 25px;
+}
+
+.center {
+text-align: center;
+}
+
+.galvanView {
+background-color: red;
+border-color: green;
+color: white;
+font-size: 20px;
+width: 150px;
+height: 40px;
+}
+
+.galvanLogin {
+background-color: red;
+border-color: green;
+color: white;
+font-size: 20px;
+width: 150px;
+height: 40px;
+}
+
+.galvanSignUp {
+background-color: yellowgreen;
+border-color: green;
+color: white;
+font-size: 20px;
+width: 150px;
+height: 40px;
+}
+
+.galvanClear {
+background-color: green;
+border-color: green;
+color: white;
+font-size: 20px;
+width: 150px;
+height: 40px;
+}
+
+.galvanRegister {
+background-color: cyan;
+border-color: royalblue;
+color: white;
+font-size: 20px;
+width: 150px;
+height: 40px;
+}
+
+.galvanCompute {
+background-color: cadetblue;
+border-color: red;
+color: white;
+font-size: 20px;
+width: 150px;
+height: 40px;
+}
+
+.galvanProductImg {
+width: 75%;
+height: 100px;
+padding-bottom: 20px;
+}
+
+.galvanNavigation {
+min-width:  500px;
+display: flex;
+min-width:  50%;
+align-items: center;
+justify-content: center;
+margin-right: 30px;
+}
+
+.galvanNav {
+font-family:  Times New Roman;
+text-decoration:  none;
+font-size: 20px;
+text-align: center;
+margin-left: 20px;
+}
+
+.galvanContent {
+padding-left: 80px;
+padding-right: 80px;
+max-width: 200%;
+height: 80vh;
+background-color: whitesmoke;
+align-content: center;
+}
+
+.galvanProductContainer {
+min-width: 265px; 
+height: 260px; 
+max-width: 250px;
+margin-left: 10px; 
+margin-right: 10px;
+}
+
+.galvanImgContainer {
+width: 100%;
+height: 250px;
+display: flex;
+align-content: center; 
+overflow: hidden;
+}
+
+.galvanImgContainer1{
+width: 100%;
+height: 250px;
+display: flex;
+align-content: center; 
+overflow: hidden;
+}
+
+
+.Container {
+display: flex;
+}
+
+.box1, .box2 {
+flex: 1;
+padding: 10px;
+}
+
+.box1 {
+width: 100%;
+height: 250px;
+display: flex;
+justify-content: flex-end;
+overflow: hidden;
+
+}
+
+.box2 {
+    align-content: center;
+}
+
+.content {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap:40px;
+}
+
+.product-container {
+background-color: whitesmoke;
+padding: 20px;
+border-radius: 8px;
+}
+
+.content .product_img{
+width:100%;
+height: auto;
+}
+
+.galvanBtn1 { 
+padding-top: 15px; 
+padding-bottom: 10px; 
+background-color: burlywood;
+border: none; 
+border-radius: 10px;
+font-weight: bold; 
+text-decoration: none;
+color: black;
+padding: 15px;
+}
+
+.galvanBtn1:hover {
+transform: scale(1.02); 
+transition: 0.1s;
+}
+.galvanBtn1:active {
+transform: scale (0.99); 
+transition: 0.1s;
+}
+
+
+.TB1 {
+border-spacing: 0 10px;
+display: inline-block;
+}
+
+.Lwidth {
+display: inline-block;
+width: 265px;
+color: green;
+font-family: Verdana;
+text-align: left;
+font-size: 25px;
+font-weight: 600;
+
+}
+
+.Tspace {
+padding: 1px;
+}
+
+/* galvanAdminProduct */
+
+.table {
+width: 1200px;
+text-align: left;
+font-size: 20px;
+}
+
+.table tr td {
+border: 1px solid black;
+padding: 10px;
+}
+
+.table tr td img {
+width: 100px;
+}
+
+
+.galvanInfoContainer { 
+display: grid;
+grid-template-columns: 1fr;
+text-align: center;
+}
+
+.galvanlblInline {
+background-color: transparent;
+font-family: Tahoma;
+font-size: 14px; 
+color: blue;
+}
+
+.galvanBtnContainer { 
+margin-top: 20px; 
+margin-block: 20px; 
+margin-left: 10px;
+margin-right: 10px;
+display: grid;
+grid-template-columns: 1fr; 
+text-align: center;
+}
